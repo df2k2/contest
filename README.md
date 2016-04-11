@@ -7,6 +7,8 @@ A high-level overview of a writing contest submission and review system.
 
 I would suggest a re-usable framework such as Laravel, Yii, Zend, etc..., if there doesn't already exist methods or plug-ins for this process.  Using a framework such as laravel would allow for a scalable component architecture with API capabilities to integrate into any existing architecture.  Alternatively, articles may be pushed via Worpress API.
 
+> Look up Wordpress plug-ins before considering outside framework.
+
 ## Database tables
 
 Overview of possible database tables
