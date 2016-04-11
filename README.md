@@ -91,7 +91,10 @@ Contests need to be accessible by the ambassadors and can be announced via email
 - Winning article or articles published should be normalized for consistent formatting and pushed (method TBD) to publishing platform (wordpress)
 - Articles published could inform the ambassador and provide link for them to publish on their social platforms.  This could help with google's indexing on top of sitemap.
 
-reference:
+====
+
+references:
 
 [Webmaster Guidelines](https://support.google.com/webmasters/answer/35769?hl=en&ref_topic=6002025)
+
 [TinyMCE](https://www.tinymce.com/)
