@@ -95,8 +95,24 @@ Contests need to be accessible by the ambassadors and can be announced via email
 
 ====
 
+## Developer Notes:
+
+### Issues:
+
+**Current Wordpress Version is 3.8**
+
+- [Wordpress 3.9 Changelog](https://codex.wordpress.org/Version_3.9)
+- [Wordpress 4.0 Changelog](https://codex.wordpress.org/Version_4.0)
+- [Wordpress 4.1 Changelog](https://codex.wordpress.org/Version_4.1)
+- [Wordpress 4.2 Changelog](https://codex.wordpress.org/Version_4.2)
+- [Wordpress 4.3 Changelog](https://codex.wordpress.org/Version_4.3)
+- [Wordpress 4.4 Changelog](https://codex.wordpress.org/Version_4.4)
+- [Wordpress 4.5 Changelog](https://codex.wordpress.org/Version_4.5)
+
+
+====
+
 references:
 
 [Webmaster Guidelines](https://support.google.com/webmasters/answer/35769?hl=en&ref_topic=6002025)
-
 [TinyMCE](https://www.tinymce.com/)
