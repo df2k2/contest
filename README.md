@@ -19,12 +19,12 @@ Overview of possible database tables
 |  ---- | ---- | ---- |
 | contest_id | int(11) | Primary Key |
 | title | varchar(255) | Title of contest / topic |
-| start_date | datetime | |
-| end_date | datetime |  |
-| content |  | |
-| tags | | Csv of Tags associated with contest |
-| created  | | |
-| updated | | |
+| start_date | datetime | Contest start date |
+| end_date | datetime | Contest end date  |
+| content | text | Contest description and information |
+| tags | varchar(255) | Csv of Tags associated with contest |
+| created  | datetime | Created date for the record |
+| updated | timestamp | Updated date for the record in the database |
 
 #### Contest Article Table
 
@@ -59,8 +59,6 @@ Contests need to be accessible by the ambassadors and can be announced via email
 ----
 
 ## Contest Article Form
-
-
 
 - Clicking contest article link should post related data needed for proper data associations
 - User authorization methods can be used
