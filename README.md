@@ -5,7 +5,7 @@ A high-level overview of a writing contest submission and review system.
 
 **Development Notes**
 
-I would suggest a re-usable framework such as Laravel, Yii, Zend, etc..., if there doesn't already exist methods or plug-ins for this process.  Using a framework such as laravel would allow for a scalable component architecture with API capabilities to integrate into any existing architecture. 
+I would suggest a re-usable framework such as Laravel, Yii, Zend, etc..., if there doesn't already exist methods or plug-ins for this process.  Using a framework such as laravel would allow for a scalable component architecture with API capabilities to integrate into any existing architecture.  Alternatively, articles may be pushed via Worpress API.
 
 ## Database tables
 
@@ -84,15 +84,14 @@ Contests need to be accessible by the ambassadors and can be announced via email
 
 ---- 
 
-## Article Reviews
+## Article Reviews, Publishing
 
-
-
-4. Internal method for reviewing articles, rating, and selecting winners
-5. Winning article or articles published should be normalized for consistent formatting and pushed (method TBD) to publishing platform (wordpress)
-6. Articles published could inform the ambassador and provide link for them to publish on their social platforms.  This could help with google's indexing on top of sitemap.
+- Internal method for reviewing articles, rating, and selecting winners
+- If component API framework used to build out system, this can be integrated into wordpress using API hooks.
+- Winning article or articles published should be normalized for consistent formatting and pushed (method TBD) to publishing platform (wordpress)
+- Articles published could inform the ambassador and provide link for them to publish on their social platforms.  This could help with google's indexing on top of sitemap.
 
 reference:
 
-Webmaster Guidelines: https://support.google.com/webmasters/answer/35769?hl=en&ref_topic=6002025
-TinyMCE to help with formatting: https://www.tinymce.com/
+[Webmaster Guidelines](https://support.google.com/webmasters/answer/35769?hl=en&ref_topic=6002025)
+[TinyMCE](https://www.tinymce.com/)
