@@ -1,11 +1,17 @@
 # Article Contest
 
 A high-level overview of a writing contest submission and review system.
-----
+====
+
+**Development Notes**
+
+I would suggest a re-usable framework such as Laravel, Yii, Zend, etc..., if there doesn't already exist methods or plug-ins for this process.  Using a framework such as laravel would allow for a scalable component architecture with API capabilities to integrate into any existing architecture. 
 
 ## Database tables
 
-Database tables for article 'contest', 'contest_article'
+Overview of possible database tables
+
+#### Contest Table
 
 | contest | Type | Description |
 |  ---- | ---- | ---- |
@@ -18,22 +24,69 @@ Database tables for article 'contest', 'contest_article'
 | created  | | |
 | updated | | |
 
+#### Contest Article Table
 
 | contest_article | Type | Description |
 |  ---- | ---- | ---- |
+| id | | |
+| contest_id | | |
+| ambassador_id  | | |
+| title  | | |
+| content  | | |
+| tags  | | |
+| date_reviewed  | | |
+| rating | | |
+| date_submitted | | |
+| created | | |
+| updated | | |
+| status | | |
 
 
-2. Publish contest and details on Ambassador internal / admin site (if exists).  
-	Link to submit article for contest. Parameter for contest_id, and ambassador_id should be passed.
-2a. Show contest theme / topics listed by due date and/or visually within a calendar mode.
+_Note: If multiple reviewers, there needs to be a many to one association to the articles; Reviewers need id for accountability_
 
-3. Link to form for posting article submission.  
-	Form field for content could use TinyMCE with custom formatting buttons (https://www.tinymce.com/)
-	Hidden or disabled fields should include contest_id / ambassador_id.
-	Terms and conditions, guidelines, and notification that images require rights.
+----
 
-3a. Submissions should include methods to cleanse posted data.
-3b. Add checkbox acknowledging that terms and conditions were read and not violated, then "Submit" button can be enabled to submit article.
+## Contest List
+
+Contests need to be accessible by the ambassadors and can be announced via email or internal admin.
+
+ - Publish contest and details on Ambassador internal / admin site (if exists).
+ - Contain links to form for submitting article for contest. Parameter for contest_id, and ambassador_id should be passed.
+ - Show contest themes / topics listed by due date and/or visually within a calendar mode.
+
+----
+
+## Contest Article Form
+
+
+
+- Clicking contest article link should post related data needed for proper data associations
+- User authorization methods can be used
+- Form field for content could use [TinyMCE](https://www.tinymce.com/) with custom formatting buttons 
+  - Limit the functionality buttons available
+- Hidden or disabled fields should include contest_id, ambassador_id, unique form key
+- Pop-up (one time) and / or links for terms and conditions, guidelines, and notification that images require rights.
+- Client-side validation
+
+**Possible Additional Functionality**
+
+- Auto-Save drafts
+- Checkbox to acknowledge terms and conditions were not knowingly violated, images rights are not violated, etc...
+  - Disabled "Submit" until checkbox is acknowledged (would help with spambots and accidental pre-mature submissions)
+- Preview mode
+- Upload images (instead of linking to img src)
+
+### Article Post-Submission
+
+- Server side validation, cleansing, normalization, character escapes
+- Notifications
+- Determine if submitted articles may be edited
+
+---- 
+
+## Article Reviews
+
+
 
 4. Internal method for reviewing articles, rating, and selecting winners
 5. Winning article or articles published should be normalized for consistent formatting and pushed (method TBD) to publishing platform (wordpress)
