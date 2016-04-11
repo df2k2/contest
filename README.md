@@ -112,7 +112,7 @@ Contests need to be accessible by the ambassadors and can be announced via email
 
 ====
 
-references:
+**References**
 
-[Webmaster Guidelines](https://support.google.com/webmasters/answer/35769?hl=en&ref_topic=6002025)
-[TinyMCE](https://www.tinymce.com/)
+- [Webmaster Guidelines](https://support.google.com/webmasters/answer/35769?hl=en&ref_topic=6002025)
+- [TinyMCE](https://www.tinymce.com/)
