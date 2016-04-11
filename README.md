@@ -97,9 +97,41 @@ Contests need to be accessible by the ambassadors and can be announced via email
 
 ## Developer Notes:
 
+### Pages Required
+
+**Admin**
+
+_Contest_
+
+- Create / View / Update contest
+- List contests with edit / delete capability
+
+_Contest Articles_
+
+- List article submissions for a contest
+- View / Update (Rate) article submission
+
+**Frontend**
+
+_Authorized_
+
+- List contests (calendar or list mode)
+- View / Edit / Update contest article
+
+_Unauthorized_
+
+- View article
+- View article list by filtering (custom) author field
+
+
+### Version 2 Considerations:
+
+- Allow update of submitted post
+- Uploading of images by user for articles
+
 ### Issues:
 
-**Current Wordpress Version is 3.8**
+**Current Installed Wordpress Version is 3.8**
 
 - [Wordpress 3.9 Changelog](https://codex.wordpress.org/Version_3.9)
 - [Wordpress 4.0 Changelog](https://codex.wordpress.org/Version_4.0)
@@ -108,6 +140,8 @@ Contests need to be accessible by the ambassadors and can be announced via email
 - [Wordpress 4.3 Changelog](https://codex.wordpress.org/Version_4.3)
 - [Wordpress 4.4 Changelog](https://codex.wordpress.org/Version_4.4)
 - [Wordpress 4.5 Changelog](https://codex.wordpress.org/Version_4.5)
+
+
 
 
 ====
